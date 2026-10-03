@@ -135,21 +135,21 @@ Pre-built, standalone binaries are available for direct download from the [Relea
 
 ```mermaid
 flowchart TD
-    User["User Query / Storage Action"] --> UI["UI Layer<br/>(Jetpack Compose Mobile / Chromium Desktop)"]
+    User["User Query / Storage Action"] --> UI["UI Layer (Jetpack Compose Mobile / Chromium Desktop)"]
     
     subgraph Natural_Language_Understanding ["Natural Language Understanding & Search"]
         UI --> Intent["Search Engine & Intent Classifier"]
-        Intent -->|Query Normalization| Expander["Acronym & Synonym Expander<br/>(DL <-> Deep Learning, Notes <-> Modules)"]
+        Intent -->|Query Normalization| Expander["Acronym & Synonym Expander (DL ↔ Deep Learning, Notes ↔ Modules)"]
         Expander --> BM25["SQLite FTS (FTS4/FTS5) BM25 Engine"]
-        Expander --> Vector["ONNX Runtime / ChromaDB<br/>all-MiniLM-L6-v2 Embeddings"]
-        BM25 --> RRF["Reciprocal Rank Fusion (k=60)<br/>+ Document Deduplication"]
+        Expander --> Vector["ONNX Runtime / ChromaDB (all-MiniLM-L6-v2 Embeddings)"]
+        BM25 --> RRF["Reciprocal Rank Fusion (k=60) + Document Deduplication"]
         Vector --> RRF
     end
 
     subgraph Neural_Reasoning ["Neural Reasoning & Local Synthesis"]
         RRF --> RAG["RAG Engine"]
-        RAG -->|LLM Present| LLM["On-Device LLM<br/>(Gemma 4 E2B / MediaPipe GenAI / Ollama)"]
-        RAG -->|Standby Fallback| Semantic["Offline Semantic Extractor &<br/>JIT OCR + UIDAI Regex Verification"]
+        RAG -->|LLM Present| LLM["On-Device LLM (Gemma 4 E2B / MediaPipe GenAI / Ollama)"]
+        RAG -->|Standby Fallback| Semantic["Offline Semantic Extractor & JIT OCR + UIDAI Verification"]
     end
 
     subgraph Vision_Intelligence ["Vision & Multi-Modal Intelligence"]
@@ -162,7 +162,7 @@ flowchart TD
         UI --> Categories["OS Storage Breakdown & Category Browser"]
         UI --> Viewer["Universal In-App Document Viewer"]
         UI --> Safety["SpaceReclaimer & DuplicateDetector"]
-        Safety --> Trash["Staging Trash (~/.storagesense/trash/)<br/>+ Reversible Action Audit Log"]
+        Safety --> Trash["Staging Trash (~/.storagesense/trash/) + Action Audit Log"]
     end
 ```
 
@@ -170,11 +170,14 @@ flowchart TD
 
 ## 5. Application Screenshots & Visual Showcase
 
+<p align="center">
+  <img src="docs/assets/showcase_chat.png" alt="Reiatsu AI Chat Assistant" width="48%" />
+  <img src="docs/assets/showcase_privacy.png" alt="Zero-Cloud Privacy & Safety Architecture" width="48%" />
+</p>
 
 <p align="center">
-  <img src="docs/assets/live_screenshot_storage.png" alt="Reiatsu Smart Repositories" width="31%" />
-  <img src="docs/assets/search_screen.png" alt="Reiatsu Neural Search" width="31%" />
-  <img src="docs/assets/settings.png" alt="Reiatsu Device Settings" width="31%" />
+  <img src="docs/assets/showcase_breakdown.png" alt="Live OS Storage Breakdown & Radial Gauge" width="48%" />
+  <img src="docs/assets/showcase_search.png" alt="Vault Neural Search & Multi-Filter Index" width="48%" />
 </p>
 
 ---
