@@ -170,10 +170,6 @@ flowchart TD
 
 ## 5. Application Screenshots & Visual Showcase
 
-<p align="center">
-  <img src="docs/assets/screen1.png" alt="Reiatsu Storage Breakdown" width="48%" />
-  <img src="docs/assets/live_screenshot_chat.png" alt="Reiatsu AI Chat Assistant" width="48%" />
-</p>
 
 <p align="center">
   <img src="docs/assets/live_screenshot_storage.png" alt="Reiatsu Smart Repositories" width="31%" />
