@@ -1,0 +1,61 @@
+==============================================================================
+REIATSU (霊圧) & STORAGESENSE DESKTOP — USER QUICKSTART GUIDE
+100% On-Device, Privacy-First Storage Intelligence Assistant
+==============================================================================
+
+Reiatsu brings instant local neural search, visual classification, and smart 
+storage management to Android and Windows PC under a strict Zero-Cloud guarantee.
+
+------------------------------------------------------------------------------
+1. ANDROID EDITION (Reiatsu Mobile)
+------------------------------------------------------------------------------
+Prerequisites:
+  - Android 8.0 (API 26) or higher.
+  - Recommended: 4+ GB RAM (6+ GB RAM for local Gemma LLM generation).
+
+Option A: 1-Click ADB Install (via PC)
+  1. Download 'Reiatsu-v1.0.0.apk' from GitHub Releases:
+     https://github.com/Orsted-Ninja/Reiatsu/releases/latest
+  2. Connect your phone via USB with 'USB Debugging' enabled.
+  3. Double-click 'Install_Reiatsu_APK.bat'.
+  4. The app will install and open automatically on your phone.
+
+Option B: Direct Sideloading (on Phone)
+  1. Download 'Reiatsu-v1.0.0.apk' directly on your phone browser.
+  2. Tap the APK in your Downloads to install.
+  3. Open Reiatsu and grant 'All files access' when prompted.
+
+Optional — Add Gemma On-Device Generative LLM:
+  - Run 'Download_And_Push_Gemma.bat' on your PC with your phone connected.
+  - Or download 'gemma-4-e2b-it.litertlm' from Hugging Face and place it in:
+    /sdcard/StorageSense/models/
+  - Note: Even without LLM weights, Reiatsu runs at 100% functionality in
+    Standby Mode using neural embeddings, offline OCR, and hybrid search.
+
+------------------------------------------------------------------------------
+2. WINDOWS PC EDITION (StorageSense Desktop)
+------------------------------------------------------------------------------
+Prerequisites:
+  - Windows 10 / Windows 11 (64-bit).
+  - Google Chrome or Microsoft Edge installed (for native desktop app window).
+
+Option A: Standalone Executable
+  1. Download 'StorageSense.exe' from GitHub Releases:
+     https://github.com/Orsted-Ninja/Reiatsu/releases/latest
+  2. Double-click 'StorageSense.exe'.
+  3. The application launches in a clean, dedicated desktop application window
+     with system tray controls near the Windows clock.
+
+Option B: Full PC Port Bundle
+  1. Download 'StorageSense-PC-Port-v1.0.zip' from GitHub Releases.
+  2. Extract the archive into your preferred directory.
+  3. Double-click 'Start_StorageSense.bat' or 'Create_Desktop_Shortcut.bat'.
+
+------------------------------------------------------------------------------
+3. PRIVACY & SECURITY GUARANTEE
+------------------------------------------------------------------------------
+- Zero Cloud: Reiatsu has ZERO internet permissions. It cannot connect to
+  any remote server or telemetry endpoint.
+- Safe Storage Actions: File cleanups and deduplication use a two-phase staging
+  trash with 1-tap instant restoration.
+==============================================================================

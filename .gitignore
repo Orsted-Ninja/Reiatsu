@@ -1,0 +1,37 @@
+# Binaries & Large Models
+*.litertlm
+*.bin
+*.onnx
+*.apk
+*.zip
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+
+# Databases & Runtime State
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.trash/
+.cache/
+logs/
+*.log
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
